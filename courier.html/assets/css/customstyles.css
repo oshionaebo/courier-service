@@ -1,0 +1,377 @@
+#hero, #free-quote{
+	background: url("../img/gallery/video.png");
+	/* background-color: #4caf60; */
+}
+#bgimage, #formbox, #testimonial{
+	background: url("../img/illustrations/callback.png");
+	/* background-color: #4caf60; */
+}
+
+/* .ddtext{
+	transition: all 0.5s ease-in-out;
+	background-color: #4cae69;
+} */
+
+.login-form{
+	width: 40%;
+	margin: 0 auto;
+	align-items: center;
+	margin-top: 14px;
+}
+.login-form label, .login-form input{
+	width: 100%;
+	border-radius: 5px;
+
+}
+.login-form input{
+	font-size: 15px;
+	padding: 5px;
+	border: 0.5px solid black;
+}
+.login-form label{
+	font-size: 15px;
+}
+.regdrop div{
+	display: none;
+	background-color: white; 
+	padding: 20px 20px 10px; 
+	border-radius: 5px; 
+	width: 100px; 
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+	animation: slideup 0.5s ease-in-out;
+}
+.regdrop:hover>a{
+	color: cornflowerblue !important;
+}
+.regdrop:hover div{
+	display: initial;
+	position: absolute;
+}
+form.order-form{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+form.order-form input{
+	font-size: 14px;
+	padding: 5px;
+	
+}
+form.order-form div.people-info input{
+	width: 100%;
+	margin-bottom: 8px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+} 
+form.order-form div.people-info label{
+	width: 100%;
+}
+form.order-form div.parcel-info{
+	width: 50%;
+	margin: 30px auto;
+	/* border: 1px solid black; */
+	padding: 20px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 3px 2px rgba(0,0,0,0.4);
+}
+form.order-form div.people-info div.sender-info{
+	/* border: 1px solid black; */
+	padding: 20px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 3px 2px rgba(0,0,0,0.4);
+}
+form.order-form div.people-info div.reciever-info{
+	/* border: 1px solid black; */
+	padding: 20px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 3px 2px rgba(0,0,0,0.4);
+}
+form.order-form div.parcel-info label{
+	width: 100%;
+}
+form.order-form div.parcel-info input{
+	width: 100%;
+	margin-bottom: 8px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+	background-color: transparent;
+}
+form.order-form div.parcel-info input:focus{
+	border: 0.5px solid rgba(0,0,0,0.3);
+	outline: none;
+}
+
+form.order-form button{
+	outline: none;
+	border: none;
+	background-color: #4caf50;
+	font-size: 12px;
+	padding: 7px;
+	width: 25%;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+}
+
+form.order-form .second-part.slidein{
+	display: block;
+	animation: slideleft 0.5s ease-in-out;
+}
+.del{
+	display: none;
+}
+form.order-form .second-part{
+	width: 70%;
+	margin: 12px auto;
+	/* display: flex;
+	flex-wrap: wrap; */
+}
+.paddr-info, .daddr-info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+form.order-form .second-part .form-control{
+	width: 47%;
+	margin-bottom: 20px;
+}
+.form-control input{
+	width: 100%;
+}
+div.second-part .form-control label{
+	width: 100%;
+}
+div.cost-sec{
+	display: flex; 
+	justify-content: space-between; 
+	width: 75%; 
+	margin: 30px auto; 
+	padding: 40px; 
+	border-radius: 4px; 
+	background-color: white; 
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	position: relative;
+}
+div.cost-sec button.add-on{
+	/* content: "<h1>this is the div after</h1>"; */
+	/* width: 200px; */
+	/* height: 200px; */
+	position: absolute;
+	left: 50%;
+	top: 85%;
+	transform: translateX(-50%);
+	padding: 10px;
+	background-color: white;
+	color: black;
+	box-shadow: 2px 1px 7px 1px rgba(0,0,0,0.4);
+
+	}
+	div.cost-sec button.add-on:hover{
+	/* border: 2px solid green; */
+	box-shadow: 2px 1px 7px 4px rgba(0,0,0,0.4);
+}
+
+form.track-form{
+	width: 50%; 
+	margin: 50px auto;
+	/* border: 1px solid red; */
+}
+form.track-form input{
+	width: 85%; 
+	border: 1px solid rgba(0,0,0,0.1);
+	/* border-radius: 5px; */
+	/* background-color: transparent; */
+	padding: 13px;
+	font-size: 15px;
+}
+form.track-form input:focus{
+	outline: none;
+}
+form.track-form button{
+	width: 15%;
+	outline: none;
+	border: none;
+	background-color: #4caf50;
+	color: white;
+	/* border-radius: 3px; */
+	font-size: 15px;
+	padding: 13px;
+}
+form.track-form button:hover{
+	background-color: #4cae69
+}
+div.track-details{
+	 width: 80%; 
+	 margin: 27px auto;
+}
+div.track-details div h4{
+	background-color: #4caf50;
+	padding: 13px;
+	margin: 0;
+	font-size: 15px;
+}
+div.track-details .tcontrol{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px; 
+	background-color: #ddd
+}
+div.track-details table p{
+	font-size: 14px;
+	/* font-weight: bold; */
+	/* margin: 0;
+	padding: 10px 0; */
+}
+div.track-details table{
+	width: 100%; 
+	background-color: #ddd; 
+	padding: 0 20px;
+}
+div.track-details table tr{
+	/* padding: 0 20px; */
+	border: 1px solid teal;
+}
+div.track-details table tr td{
+	padding: 0 20px;
+	/* border: 1px solid teal; */
+}
+div.phead, div.dhead{
+	cursor: pointer;
+	display: flex; 
+	justify-content: space-between; 
+	background-color: #4caf60; 
+	align-items: center; 
+	padding: 0 20px;
+}
+.pdrop-down.anim{
+	height: 0;
+}
+.ddrop-down.anim{
+	height: 0;
+}
+.ddrop-down, .pdrop-down{
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+	max-height: 0;
+}
+div.adminlogin-container{
+	margin-top: 120px; 
+	margin-bottom: 40px;
+}
+div.admin-inner{
+	background-color: white;
+	padding: 15px;
+	/* border: 2px solid green;  */
+	width: 50%; 
+	margin: 0 auto;
+	border-radius: 4px;
+	box-shadow: 2px 3px 5px 4px rgba(0,0,0,0.5)
+}
+div.admin-inner button{
+	width: 80%;
+	background-color: #4caf50;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 10px;
+	margin-top: 13px;
+}
+div.admin-header{
+	display: flex;
+	justify-content: space-around;
+}
+/* div.admin-header div{
+	border-bottom: 3px solid #4caf50;
+} */
+div.admin-body>div{
+	display: none;
+}
+div.admin-body>div.secbody{
+	display: block;
+}
+h2.testh2{
+	color: teal;
+	position: relative;
+}
+div.admin-header div{
+	position: relative;
+	cursor: pointer;
+}
+div.admin-header div::after{
+	content: "";
+	width: 0px;
+	height: 5px;
+	background-color: #4caf50;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+}
+div.admin-header div:hover::after, div.admin-header div.anim::after{
+	/* background-color: green; */
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.animate{
+	animation: slideup 2s ease-in;
+}
+button.btn-test{
+	background-color: teal;
+	border: none;
+	outline: none;
+	padding: 5px;
+	font-size: 13px;
+	color: white;
+	display: block;
+	/* animation: slideup 2s ease-in;  */
+}
+/* button.btn-test:scroll(.animate){
+	animation: slideup 2s ease-in;
+} */
+/* .animation-test{
+	color: green !important;
+	animation: slideup 2s ease-in !important;
+} */
+
+/* div.myModal{
+	position: absolute !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} */
+
+@keyframes slideup{
+	from{
+		margin-top: 200px;
+		opacity: 0
+	}
+	to{
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+@keyframes slideleft{
+	from{
+		margin-top: 200px;
+		opacity: 0
+	}
+	to{
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+@keyframes slideup{
+	from{
+		margin-top: 25px;
+		opacity: 0
+	}
+	to{
+		margin-top: 0;
+		opacity: 1;
+	}
+}

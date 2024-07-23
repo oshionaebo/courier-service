@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willis Courier</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"> -->
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <!-- <link href="{% static 'css/theme.css' %}" rel="stylesheet" /> -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <link href="assets/css/customstyles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="flex justify-start md:justify-around p-4 bg-white items-center sticky z-50 top-0 shadow-md">
+        <a class="text-4xl text-purple-700 font-bold" href="#">Logo</a>
+        <div class="hidden md:block">
+          <ul class="flex">
+            <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="index.html">Home</a>
+              </li>
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="contact.html">Contact</a>
+              </li>
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="services.html">Services</a>
+              </li>    
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="prices.html">Pricing</a>
+              </li>    
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="about.html">About</a>
+              </li>    
+          </ul>
+        </div>
+        <div class="absolute top-7 right-10 space-y-1 h-6 w-9 md:hidden cursor-pointer z-50" id="openNav">
+            <span class="block w-11 h-1 bg-red-700"></span>
+            <span class="block w-11 h-1 bg-red-700"></span>
+            <span class="block w-11 h-1 bg-red-700"></span>
+        </div>
+        <a class="bg-blue-800 rounded-md hidden md:inline shadow text-white py-4 px-6 text-2xl tracking-wider hover:bg-blue-600 animation-ping" href="tracking.html">Track <i class="fa fa-arrow-right"></i> </a>  
+    </nav>
+
+    <div class="fixed top-0 h-[100%] w-0 right-0 bg-blue-600 z-50 transition ease-in-out duration-700 overflow-hidden" id="sideNav">
+        <button class="border-[3px] font-bold rounded-full w-10 h-10 text-white text-2xl absolute top-5 left-10 cursor-pointer" id="closeNav">&times;</button>
+        <ul class="mt-28 mx-10">
+            <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="index.html">Home</a>
+              </li>
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="contact.html">Contact</a>
+              </li>
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="services.html">Services</a>
+              </li>    
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="about.html">About</a>
+              </li>    
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="prices.html">Prices</a>
+              </li>   
+          </ul>
+    </div>
+
+    <div class="h-[60vh] md:h-[50vh] pl-11 bg-cover bg-no-repeat relative" id="hero">
+        <!-- <button class="bg-red-500 border-0 text-white rounded-md text-lg py-2 px-4 shadow-xl hover:text-green-500 hover:border-green-500">save</button> -->
+         <div class="relative top-[50%] space-y-8 translate-y-[-50%]">
+             <h1 class="text-white md:w-[50%] text-6xl md:text-3xl sm:text-6xl md:text-[65px] font-bold border-l-[6px] border-blue-500 pl-10">Pricing</h1>
+             <div class="">
+                <span class="text-2xl font-semibold text-white">Home</span>
+                <span class="text-2xl font-semibold text-gray-400">/</span>
+                <span class="text-2xl font-semibold text-gray-400">Pricing</span>
+             </div>
+         </div>
+    </div>
+
+    <div class="mb-20 pl-10 pt-36">
+        <!-- <button class="bg-red-500 border-0 text-white rounded-md text-lg py-2 px-4 shadow-xl hover:text-green-500 hover:border-green-500">save</button> -->
+         <h4 class="text-gray-400 text-center text-2xl font-bold tracking-widest">Pricing</h4>
+         <h1 class="text-black my-10 text-center text-4xl md:text-6xl font-bold leading-normal">
+            Choose Your <span class="text-4xl md:text-[50px] font-bold">Affordable Plan</span> for <br>Your <span class="text-4xl md:text-[50px] font-bold">Package</span>
+         </h1>
+         <div class="mt-14 grid md:grid-cols-3 md:gap-5 mx-10 space-y-14 md:space-y-0">
+            <div class="border-[3px] border-gray-400 py-24">
+                <div class="text-center">
+                    <h2 class="text-black text-3xl font-semibold">BASIC</h2>
+                    <div class="mt-10 mb-16">
+                        <h2 class="text-black text-6xl font-bold">$50</h2>
+                        <h5 class="text-gray-500 text-xl">For Single Product</h5>
+                    </div>
+                </div>
+                <div class="pl-24">
+                    <ul class="space-y-8">
+                        <li class="text-black text-xl">Product Weight: 3KG-5KG</li>
+                        <li class="text-black text-xl">Country: All</li>
+                        <li class="text-black text-xl">Duration: 7:14days</li>
+                        <li class="text-black text-xl">Support: Yes</li>
+                        <li class="text-black text-xl">Tracking: No</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-[3px] border-gray-400 py-24">
+                <div class="text-center">
+                    <h2 class="text-black text-3xl font-semibold">BASIC</h2>
+                    <div class="mt-10 mb-16">
+                        <h2 class="text-black text-6xl font-bold">$150</h2>
+                        <h5 class="text-gray-500 text-xl">For Single Product</h5>
+                    </div>
+                </div>
+                <div class="pl-24">
+                    <ul class="space-y-8">
+                        <li class="text-black text-xl">Product Weight: 5KG-10KG</li>
+                        <li class="text-black text-xl">Country: All</li>
+                        <li class="text-black text-xl">Duration: 10:14days</li>
+                        <li class="text-black text-xl">Support: Yes</li>
+                        <li class="text-black text-xl">Tracking: Yes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-[3px] border-gray-400 py-24">
+                <div class="text-center">
+                    <h2 class="text-black text-3xl font-semibold">BASIC</h2>
+                    <div class="mt-10 mb-16">
+                        <h2 class="text-black text-6xl font-bold">$300</h2>
+                        <h5 class="text-gray-500 text-xl">For Single Product</h5>
+                    </div>
+                </div>
+                <div class="pl-24">
+                    <ul class="space-y-8">
+                        <li class="text-black text-xl">Product Weight: 10KG-15KG</li>
+                        <li class="text-black text-xl">Country: All</li>
+                        <li class="text-black text-xl">Duration: 7:14days</li>
+                        <li class="text-black text-xl">Support: Yes</li>
+                        <li class="text-black text-xl">Tracking: Yes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="free-quote">
+        <div class="bg-blue-950 opacity-95 py-24 px-6 md:px-16 text-center md:text-left md:flex md:justify-between md:items-center">
+            <div>
+                <h4 class="text-blue-400 text-xl font-semibold">24/7 WE ARE HERE</h4>
+                <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight mt-4">Get A Free Quotation <br>With Our Experts</h1>
+            </div>
+            <button class="bg-blue-600 text-white hidden md:inline-block text-xl rounded-md py-5 px-8 hover:bg-gray-800">Make a Call</button>
+        </div>
+    </div>
+
+<div class="mt-20 px-10 py-32 bg-blue-950 space-y-7 md:space-y-0 md:grid md:grid-cols-4 md:gap-5">
+    <div class="text-gray-400 space-y-6">
+        <h1 class="text-3xl text-white font-semibold">Willis</h1>
+        <p class="text-xl">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam inventore aperiam repellendus?
+        </p>
+    </div>
+    <ul class="text-gray text-gray-400 text-center md:text-left space-y-5">
+        <h2 class="text-3xl text-white font-semibold">Office</h2>
+        <li class="text-xl">Australia</li>
+        <li class="text-xl">175 24th Street, Office</li>
+        <h4 class="text-white text-xl">info</h4>
+        <li class="text-white text-2xl">+18-4675826</li>
+    </ul>
+    <ul class="text-gray text-gray-400 text-center md:text-left space-y-5">
+        <h2 class="text-3xl text-white font-semibold">Links</h2>
+        <li class="text-xl">About</li>
+        <li class="text-xl">Services</li>
+        <li class="text-xl">Freight</li>
+        <li class="text-xl">Pricing</li>
+        <li class="text-xl">FAQ</li>
+    </ul>
+    <ul class="text-gray text-gray-400 text-center md:text-left space-y-5">
+        <h2 class="text-3xl text-white font-semibold">Get in Touch</h2>
+        <li class="text-xl"><i class="fab fa-facebook text-white inline-block mr-5"></i> Facebook</li>
+        <li class="text-xl"><i class="fab fa-instagram text-white inline-block mr-5"></i> Instagram</li>
+        <h4 class="text-xl"><i class="fab fa-twitter text-white inline-block mr-5"></i> Twitter</h4>
+        <li class="text-xl"><i class="fab fa-skype text-white inline-block mr-5"></i> Skype</li>
+    </ul>
+</div>
+<div class="bg-blue-950 border-t-[1px] text-center md:text-left border-gray-400 p-8">
+    <p class="text-white text-xl">&copy; 2024 Willis. All rights reserved</p>
+</div>
+
+<script src="assets/js/inview.js" lang="ts"></script>
+<script src="assets/@popperjs/popper.min.js"></script>
+<script src="assets/is/is.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="assets/fontawesome/all.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap-navbar.js"></script>
+<script>
+    const openNav = document.querySelector("#openNav")
+    const closeNav = document.querySelector("#closeNav")
+    const sideNav = document.querySelector("#sideNav")
+
+    openNav.onclick = function(){
+        sideNav.classList.remove("w-0")
+        sideNav.classList.add("w-[55%]")
+    }
+    closeNav.onclick = function(){
+        sideNav.classList.remove("w-[55%]")
+        sideNav.classList.add("w-0")
+    }
+
+    window.addEventListener("resize", function(){
+        if (window.innerWidth > 768){
+            sideNav.classList.remove("w-[55%]")
+            sideNav.classList.add("w-0")
+        }
+    })
+</script>
+</body>
+</html>
