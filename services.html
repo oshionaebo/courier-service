@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willis Courier</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"> -->
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <!-- <link href="{% static 'css/theme.css' %}" rel="stylesheet" /> -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <link href="assets/css/customstyles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="flex justify-start md:justify-around p-4 bg-white items-center sticky z-50 top-0 shadow-md">
+        <a class="text-4xl text-purple-700 font-bold" href="#">Logo</a>
+        <div class="hidden md:block">
+          <ul class="flex">
+            <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="index.html">Home</a>
+              </li>
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="contact.html">Contact</a>
+              </li>
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="services.html">Services</a>
+              </li>    
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="prices.html">Pricing</a>
+              </li>    
+              <li class="mx-3">
+                <a class="text-xl hover:text-blue-700" href="about.html">About</a>
+              </li> 
+          </ul>
+        </div>
+        <div class="absolute top-7 right-10 space-y-1 h-6 w-9 md:hidden cursor-pointer z-50" id="openNav">
+            <span class="block w-11 h-1 bg-red-700"></span>
+            <span class="block w-11 h-1 bg-red-700"></span>
+            <span class="block w-11 h-1 bg-red-700"></span>
+        </div>
+        <a class="bg-blue-800 rounded-md hidden md:inline shadow text-white py-4 px-6 text-2xl tracking-wider hover:bg-blue-600 animation-ping" href="tracking.html">Track <i class="fa fa-arrow-right"></i> </a>  
+    </nav>
+
+    <div class="fixed top-0 h-[100%] w-0 right-0 bg-blue-600 z-50 transition ease-in-out duration-700 overflow-hidden" id="sideNav">
+        <button class="border-[3px] font-bold rounded-full w-10 h-10 text-white text-2xl absolute top-5 left-10 cursor-pointer" id="closeNav">&times;</button>
+        <ul class="mt-28 mx-10">
+            <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="index.html">Home</a>
+              </li>
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="contact.html">Contact</a>
+              </li>
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="services.html">Services</a>
+              </li>    
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="about.html">About</a>
+              </li>    
+              <li class="border-b-[0.5px] border-gray-400 py-5 px-2 hover:bg-gray-800">
+                <a class="text-xl text-white font-semibold" href="prices.html">Prices</a>
+              </li>  
+          </ul>
+    </div>
+
+    <div class="h-[60vh] md:h-[50vh] pl-11 bg-cover bg-no-repeat relative" id="hero">
+        <!-- <button class="bg-red-500 border-0 text-white rounded-md text-lg py-2 px-4 shadow-xl hover:text-green-500 hover:border-green-500">save</button> -->
+         <div class="relative top-[50%] space-y-8 translate-y-[-50%]">
+             <h1 class="text-white md:w-[50%] text-5xl sm:text-6xl md:text-[65px] font-bold border-l-[6px] border-blue-500 pl-10">Services</h1>
+             <div class="">
+                <span class="text-2xl font-semibold text-white">Home</span>
+                <span class="text-2xl font-semibold text-gray-400">/</span>
+                <span class="text-2xl font-semibold text-gray-400">Services</span>
+             </div>
+         </div>
+    </div>
+
+    <div class="mb-20 pl-10 pt-36">
+        <!-- <button class="bg-red-500 border-0 text-white rounded-md text-lg py-2 px-4 shadow-xl hover:text-green-500 hover:border-green-500">save</button> -->
+         <h4 class="text-gray-400 text-center text-lg font-bold tracking-widest">WHAT WE DO</h4>
+         <h1 class="text-black my-10 text-center text-4xl md:text-6xl font-bold leading-tight">
+            We Provide Great Value For<br> <span class="text-4xl md:text-[50px] font-bold">Courier Services</span>
+         </h1>
+         <div class="mx-8 sm:grid sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-16">
+            <div class="w-full pt-8 pb-11 mx-auto bg-white border-[0.5px] border-gray-200">
+                <div class="h-full">
+                    <div class="text-left mb-6 px-14">
+                        <svg class="w-20 text-blue-400 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" />
+                          </svg>
+                    </div>
+                    <div class="w-full border-t-[1px] border-b-[1px] border-gray-200 py-8 px-14">
+                        <h1 class="text-3xl mb-4 font-semibold text-black">Standard Courier</h1>
+                        <p class="text-xl text-gray-500">
+                            This service involves transferring the <br> parcel to the closest depot to the <br> destination Location
+                        </p>
+                    </div>
+                    <button class="text-2xl text-black mt-8 inline-block ml-14">READ MORE</button>
+                </div>
+            </div>
+            <div class="w-full pt-8 pb-11 mx-auto bg-white border-[0.5px] border-gray-200">
+                <div class="h-full">
+                    <div class="text-left mb-6 px-14">
+                        <svg class="w-20 text-blue-400 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                          </svg>
+                    </div>
+                    <div class="w-full border-t-[1px] border-b-[1px] border-gray-200 py-8 px-14">
+                        <h1 class="text-3xl mb-4 font-semibold text-black">Express Courier</h1>
+                        <p class="text-xl text-gray-500">
+                            This is a service provided to those who need urgent delivery to be sent and recieved on the same day
+                        </p>
+                    </div>
+                    <button class="text-2xl text-black mt-8 inline-block ml-14">READ MORE</button>
+                </div>
+            </div>
+            <div class="w-full pt-8 pb-11 mx-auto bg-white border-[0.5px] border-gray-200">
+                <div class="h-full">
+                    <div class="text-left mb-6 px-14">
+                        <svg class="w-20 text-blue-400 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                          </svg>
+                    </div>
+                    <div class="w-full border-t-[1px] border-b-[1px] border-gray-200 py-8 px-14">
+                        <h1 class="text-3xl mb-4 font-semibold text-black">Pallet Courier</h1>
+                        <p class="text-xl text-gray-500">
+                            This is a service that safely strict delivery and promtly delivers goods on pallets
+                        </p>
+                    </div>
+                    <button class="text-2xl text-black mt-8 inline-block ml-14">READ MORE</button>
+                </div>
+            </div>
+            <div class="w-full pt-8 pb-11 mx-auto bg-white border-[0.5px] border-gray-200">
+                <div class="h-full">
+                    <div class="text-left mb-6 px-14">
+                        <svg class="text-blue-400 w-20 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                          </svg>
+                    </div>
+                    <div class="w-full border-t-[1px] border-b-[1px] border-gray-200 py-8 px-14">
+                        <h1 class="text-3xl mb-4 font-semibold text-black">Over Night Courier</h1>
+                        <p class="text-xl text-gray-500">
+                            This courier will usually transport the goods during the night or early hours of the morning
+                        </p>
+                    </div>
+                    <button class="text-2xl text-black mt-8 inline-block ml-14">READ MORE</button>
+                </div>
+            </div>
+            <div class="w-full pt-8 pb-11 mx-auto bg-white border-[0.5px] border-gray-200">
+                <div class="h-full">
+                    <div class="text-left mb-6 px-14">
+                        <svg class="w-20 text-blue-400 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                          </svg> 
+                    </div>
+                    <div class="w-full border-t-[1px] border-b-[1px] border-gray-200 py-8 px-14">
+                        <h1 class="text-3xl mb-4 font-semibold text-black">International Courier</h1>
+                        <p class="text-xl text-gray-500">
+                            This is a transport service of goods or documents from one country to another country
+                        </p>
+                    </div>
+                    <button class="text-2xl text-black mt-8 inline-block ml-14">READ MORE</button>
+                </div>
+            </div>
+            <div class="w-full pt-8 pb-11 mx-auto bg-white border-[0.5px] border-gray-200">
+                <div class="h-full">
+                    <div class="text-left mb-6 px-14">
+                        <svg class="w-20 text-blue-400 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                          </svg>                          
+                    </div>
+                    <div class="w-full border-t-[1px] border-b-[1px] border-gray-200 py-8 px-14">
+                        <h1 class="text-3xl mb-4 font-semibold text-black">Warehousing</h1>
+                        <p class="text-xl text-gray-500">
+                            This type of service will involve managed storage solutions to give companies greater control
+                        </p>
+                    </div>
+                    <button class="text-2xl text-black mt-8 inline-block ml-14">READ MORE</button>
+                </div>
+            </div>
+            
+         </div>
+    </div>
+
+    <div id="free-quote">
+        <div class="bg-blue-950 opacity-95 py-24 px-8 md:px-16 text-center space-y-5 md:space-y-0 md:text-left md:flex md:justify-between md:items-center">
+            <div>
+                <h4 class="text-blue-400 text-xl font-semibold">24/7 WE ARE HERE</h4>
+                <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight mt-4">Get A Free Quotation <br>With Our Experts</h1>
+            </div>
+            <button class="bg-blue-600 text-white text-xl rounded-md py-5 px-8 hover:bg-gray-800">Make a Call</button>
+        </div>
+    </div>
+
+    <div class="my-20">
+        <div class="mx-auto">
+            <h4 class="text-gray-500 text-center text-lg font-semibold tracking-widest leading-loose">FAVOURITE CONSIGNMENT</h4>
+            <h1 class="text-black my-10 text-center text-4xl md:text-6xl font-bold leading-tight">
+               Secure, Affordable and Reliable<br> <span class="text-4xl md:text-[50px] font-bold">Logistics Support</span>
+            </h1>
+        </div>
+
+         <div class="md:grid space-y-14 md:space-y-0 mt-24 md:grid-cols-4 gap-9 mx-6 md:mx-14">
+            <div class="shadow relative h-[45vh]">
+                <div class="overflow-hidden border-2 border-yellow-400 h-full w-full">
+                    <img class="h-full w-full transition ease-in-out duration-1000 hover:scale-110" src="assets/img/gallery/cour10.jpeg" alt="">
+                </div>
+                <div class="py-10 px-14 bg-gray-900 bg-opacity-70 text-white z-20 absolute left-0 top-0 w-full h-full flex flex-col justify-between">
+                    <svg class="text-white w-20 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                      </svg>
+                    <div>
+                        <h2 class="text-2xl mb-3 leading-relaxed">AIR FREIGHT</h2>
+                        <div class="w-24 h-1 bg-white"></div>
+                    </div>
+                    <div class="text-left">
+                        <button class="text-blue-500 text-xl mt-7 font-semibold">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow relative h-[45vh]">
+                <div class="overflow-hidden border-2 border-yellow-400 h-full">
+                    <img class="h-full transition ease-in-out duration-1000 hover:scale-110" src="assets/img/gallery/cour11.jpeg" alt="">
+                </div>
+                <div class="py-10 px-14 bg-gray-900 bg-opacity-70 text-white z-20 absolute left-0 top-0 w-full h-full flex flex-col justify-between">
+                    <svg class="text-white w-20 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                    <div>
+                        <h2 class="text-2xl mb-3 leading-relaxed">SEA FREIGHT</h2>
+                        <div class="w-24 h-1 bg-white"></div>
+                    </div>
+                    <div class="text-left">
+                        <button class="text-blue-500 text-xl mt-7 font-semibold">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow relative h-[45vh]">
+                <div class="overflow-hidden border-2 border-yellow-400 h-full">
+                    <img class="h-full transition ease-in-out duration-1000 hover:scale-110" src="assets/img/gallery/cour4.jpeg" alt="">
+                </div>
+                <div class="py-10 px-14 bg-gray-900 bg-opacity-70 text-white z-20 absolute left-0 top-0 w-full h-full flex flex-col justify-between">
+                    <svg class="text-white w-20 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                      </svg>
+                    <div>
+                        <h2 class="text-2xl mb-3 leading-relaxed">GROUND FREIGHT</h2>
+                        <div class="w-24 h-1 bg-white"></div>
+                    </div>
+                    <div class="text-left">
+                        <button class="text-blue-500 text-xl mt-7 font-semibold">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow relative h-[45vh]">
+                <div class="overflow-hidden border-2 border-yellow-400 h-full">
+                    <img class="h-full transition ease-in-out duration-1000 hover:scale-110" src="assets/img/gallery/cour6.jpeg" alt="">
+                </div>
+                <div class="py-10 px-14 bg-gray-900 bg-opacity-60 text-white z-20 absolute left-0 top-0 w-full h-full flex flex-col justify-between">
+                    <svg class="text-white w-20 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                      </svg>
+                    <div>
+                        <h2 class="text-2xl mb-3 leading-relaxed">WAREHOUSING</h2>
+                        <div class="w-24 h-1 bg-white"></div>
+                    </div>
+                    <div class="text-left">
+                        <button class="text-blue-500 text-xl mt-7 font-semibold">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-24" id="formbox">
+        <div class="bg-blue-950 opacity-95 py-32">
+            <div class="mx-10 mb-5">
+                <h5 class="text-center text-white font-bold text-lg tracking-widest mb-5">PRICING</h5>
+                <h1 class="text-center text-white font-bold text-4xl md:text-6xl">Choose Affordable Plan For <br>Your Package</h1>
+            </div>
+            <div class="mt-14 grid md:grid-cols-3 md:gap-5 mx-10 space-y-14 md:space-y-0">
+                <div class="border-[3px] border-gray-400 py-24">
+                    <div class="text-center">
+                        <h2 class="text-white text-3xl font-semibold">BASIC</h2>
+                        <div class="mt-10 mb-16">
+                            <h2 class="text-white text-6xl font-bold">$50</h2>
+                            <h5 class="text-gray-500 text-xl">For Single Product</h5>
+                        </div>
+                    </div>
+                    <div class="pl-24">
+                        <ul class="space-y-8">
+                            <li class="text-white text-xl">Product Weight: 3KG-5KG</li>
+                            <li class="text-white text-xl">Country: All</li>
+                            <li class="text-white text-xl">Duration: 7:14days</li>
+                            <li class="text-white text-xl">Support: Yes</li>
+                            <li class="text-white text-xl">Tracking: No</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-[3px] border-gray-400 py-24">
+                    <div class="text-center">
+                        <h2 class="text-white text-3xl font-semibold">PREMIUM</h2>
+                        <div class="mt-10 mb-16">
+                            <h2 class="text-white text-6xl font-bold">$150</h2>
+                            <h5 class="text-gray-500 text-xl">For Single Product</h5>
+                        </div>
+                    </div>
+                    <div class="pl-24">
+                        <ul class="space-y-8">
+                            <li class="text-white text-xl">Product Weight: 5KG-10KG</li>
+                            <li class="text-white text-xl">Country: All</li>
+                            <li class="text-white text-xl">Duration: 10:14days</li>
+                            <li class="text-white text-xl">Support: Yes</li>
+                            <li class="text-white text-xl">Tracking: Yes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-[3px] border-gray-400 py-24">
+                    <div class="text-center">
+                        <h2 class="text-white text-3xl font-semibold">STANDARD</h2>
+                        <div class="mt-10 mb-16">
+                            <h2 class="text-white text-6xl font-bold">$300</h2>
+                            <h5 class="text-gray-500 text-xl">For Single Product</h5>
+                        </div>
+                    </div>
+                    <div class="pl-24">
+                        <ul class="space-y-8">
+                            <li class="text-white text-xl">Product Weight: 10KG-15KG</li>
+                            <li class="text-white text-xl">Country: All</li>
+                            <li class="text-white text-xl">Duration: 7:14days</li>
+                            <li class="text-white text-xl">Support: Yes</li>
+                            <li class="text-white text-xl">Tracking: Yes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="mt-14">
+            <h2 class="text-xl text-gray-500 text-center">This is the body of the form</h2>
+        </div> -->
+    </div>
+
+
+<div class="mt-20 px-10 py-32 bg-blue-950 space-y-7 md:space-y-0 md:grid md:grid-cols-4 md:gap-5">
+    <div class="text-gray-400 space-y-6">
+        <h1 class="text-3xl text-white font-semibold">Willis</h1>
+        <p class="text-xl">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam inventore aperiam repellendus?
+        </p>
+    </div>
+    <ul class="text-gray text-gray-400 text-center md:text-left space-y-5">
+        <h2 class="text-3xl text-white font-semibold">Office</h2>
+        <li class="text-xl">Australia</li>
+        <li class="text-xl">175 24th Street, Office</li>
+        <h4 class="text-white text-xl">info</h4>
+        <li class="text-white text-2xl">+18-4675826</li>
+    </ul>
+    <ul class="text-gray text-gray-400 text-center md:text-left space-y-5">
+        <h2 class="text-3xl text-white font-semibold">Links</h2>
+        <li class="text-xl">About</li>
+        <li class="text-xl">Services</li>
+        <li class="text-xl">Freight</li>
+        <li class="text-xl">Pricing</li>
+        <li class="text-xl">FAQ</li>
+    </ul>
+    <ul class="text-gray text-gray-400 text-center md:text-left space-y-5">
+        <h2 class="text-3xl text-white font-semibold">Get in Touch</h2>
+        <li class="text-xl"><i class="fab fa-facebook text-white inline-block mr-5"></i> Facebook</li>
+        <li class="text-xl"><i class="fab fa-instagram text-white inline-block mr-5"></i> Instagram</li>
+        <h4 class="text-xl"><i class="fab fa-twitter text-white inline-block mr-5"></i> Twitter</h4>
+        <li class="text-xl"><i class="fab fa-skype text-white inline-block mr-5"></i> Skype</li>
+    </ul>
+</div>
+<div class="bg-blue-950 border-t-[1px] text-center md:text-left border-gray-400 p-8">
+    <p class="text-white text-xl">&copy; 2024 Willis. All rights reserved</p>
+</div>
+
+<script src="assets/js/inview.js" lang="ts"></script>
+<script src="assets/@popperjs/popper.min.js"></script>
+<script src="assets/is/is.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="assets/fontawesome/all.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap-navbar.js"></script>
+<script>
+    const openNav = document.querySelector("#openNav")
+    const closeNav = document.querySelector("#closeNav")
+    const sideNav = document.querySelector("#sideNav")
+
+    openNav.onclick = function(){
+        sideNav.classList.remove("w-0")
+        sideNav.classList.add("w-[55%]")
+    }
+    closeNav.onclick = function(){
+        sideNav.classList.remove("w-[55%]")
+        sideNav.classList.add("w-0")
+    }
+
+    window.addEventListener("resize", function(){
+        if (window.innerWidth > 768){
+            sideNav.classList.remove("w-[55%]")
+            sideNav.classList.add("w-0")
+        }
+    })
+</script>
+</body>
+</html>
